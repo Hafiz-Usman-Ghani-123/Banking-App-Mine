@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fafafabe;
+    font-family: 'Poppins';
+}
+
+.container {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#login-box {
+    border-radius: 10px;
+    background-color: rgb(191, 64, 191);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    padding: 50px 100px;
+
+}
+
+.login-box-heading {
+    color: white;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 45px;
+}
+
+#User-in,
+#Pass-in {
+    margin: 10px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.login-btn {
+    padding: 10px 20px;
+    margin-top: 15px;
+    border-radius: 10px;
+    background-color: white;
+
+}
+
+.deposit,
+.withdraw {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-amount {
+    padding: 5px;
+    border-radius: 5px;
+    width: 65%;
+}
+
+.Dashboard {
+    font-weight: bold;
+    margin-bottom: 50px;
+    background-color: rgb(191, 64, 191);
+    text-align: center;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.userName {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 27px;
+    background-color: rgb(191, 64, 191);
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    width: 51vw;
+}

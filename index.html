@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking Web App</title>
+    <!-- poppin font  -->
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+
+    <!-- bootstrap link  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- css file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- login box  -->
+        <div id="login-box">
+            <h1 class="login-box-heading">Mini Bank</h1>
+            <input id="User-in" type="text" placeholder="Username">
+            <input id="Pass-in" type="text" placeholder="Password">
+            <button class="login-btn" onclick="loginBtn()">Login</button>
+        </div>
+
+        <div id="main">
+            <div class="row">
+                <div class="col">
+                    <h1 class="Dashboard">Mini Bank Dashboard </h1>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Deposit</h5>
+                            <h6 class="card-subtitle mb-2 text-body-secondary">$ <span id="deposit_box">00</span></h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Withdraw</h5>
+                            <h6 class="card-subtitle mb-2 text-body-secondary">$ <span id="withdrawl-total">00</span>
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Balance</h5>
+                            <h6 class="card-subtitle mb-2 text-body-secondary">$ <span id="balance">00</span></h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 2nd row--------------------------- -->
+            <div class="row">
+                <div class="col-6 deposit my-5 ">
+                    <div class="card" style="width: 450px;">
+                        <div class="card-body">
+                            <h5 class="card-title mb-3">Deposit Amount $ <span id="Deposited">00</span></h5>
+                            <input type="number" placeholder="Enter your Deposit amount " class="input-amount"
+                                id="deposit-amount"><br><br>
+                            <button class="btn btn-light border border-dark " style="width: 120px" ;
+                                onclick="amountDeposit()">Deposit</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 withdraw my-5  ">
+                    <div class="card" style="width: 450px;">
+                        <div class="card-body">
+                            <h5 class="card-title mb-3">Withdraw Amount $ <span id="withdrawl-amount">00</span></h5>
+                            <input type="number" placeholder="Enter your withdraw amount" class="input-amount"
+                                id="withdraw-input"><br><br>
+                            <button class="btn btn-light border border-dark " style="width: 120px" ;
+                                onclick="amountWithdraw()">Withdraw</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <h6 class="userName">Thank you for joining us, <span id="u_name"></span> !!</h6>
+        </div>
+    </div>
+
+    <!-- bootstrap link  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <!-- script file  -->
+    <script src="script.js"></script>
+</body>
+
+</html>
