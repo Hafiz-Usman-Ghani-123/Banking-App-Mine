@@ -68,6 +68,7 @@ body {
 .Dashboard {
     font-weight: bold;
     margin-bottom: 50px;
+    margin-top: 20px;
     background-color: rgb(191, 64, 191);
     text-align: center;
     color: white;
