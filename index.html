@@ -16,33 +16,34 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container  ">
         <!-- login box  -->
-        <div id="login-box">
-            <h1 class="login-box-heading">Mini Bank</h1>
-            <input id="User-in" type="text" placeholder="Username">
-            <input id="Pass-in" type="text" placeholder="Password">
-            <button class="login-btn" onclick="loginBtn()">Login</button>
+        <div class="row   ">
+            <div id="login-box" class="col px-3 py-4 p-sm-5 , my-5 ">
+                <h1 class="login-box-heading ">Mini Bank</h1>
+                <input id="User-in" type="text" placeholder="Username">
+                <input id="Pass-in" type="text" placeholder="Password">
+                <button class="login-btn" onclick="loginBtn()">Login</button>
+            </div>
         </div>
 
-        <div id="main">
-            <div class="row">
-                <div class="col">
-                    <h1 class="Dashboard">Mini Bank Dashboard </h1>
-
+        <div id="main" class="">
+            <div class="row     ">
+                <div class="col my-3  ">
+                    <h1 class="Dashboard py-3">Mini Bank Dashboard </h1>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-4">
-                    <div class="card" style="width: 18rem;">
+            <div class="row d-flex flex-column flex-sm-row">
+                <div class="col     text-center text-md-start  my-1 ">
+                    <div class="card amount-box">
                         <div class="card-body">
                             <h5 class="card-title">Deposit</h5>
                             <h6 class="card-subtitle mb-2 text-body-secondary">$ <span id="deposit_box">00</span></h6>
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
-                    <div class="card" style="width: 18rem;">
+                <div class="col   text-center text-md-start my-1 ">
+                    <div class="card amount-box">
                         <div class="card-body">
                             <h5 class="card-title">Withdraw</h5>
                             <h6 class="card-subtitle mb-2 text-body-secondary">$ <span id="withdrawl-total">00</span>
@@ -50,8 +51,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
-                    <div class="card" style="width: 18rem;">
+                <div class="col   text-center text-md-start  my-1">
+                    <div class="card amount-box">
                         <div class="card-body">
                             <h5 class="card-title">Balance</h5>
                             <h6 class="card-subtitle mb-2 text-body-secondary">$ <span id="balance">00</span></h6>
@@ -60,11 +61,11 @@
                 </div>
             </div>
             <!-- 2nd row--------------------------- -->
-            <div class="row">
-                <div class="col-6 deposit my-5 ">
-                    <div class="card" style="width: 450px;">
+            <div class="row my-4">
+                <div class="col-sm-6 col-12 my-1 deposit ">
+                    <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title mb-3">Deposit Amount $ <span id="Deposited">00</span></h5>
+                            <h5 class="card-title mb-3">Deposit   $ <span id="Deposited">00</span></h5>
                             <input type="number" placeholder="Enter your Deposit amount " class="input-amount"
                                 id="deposit-amount"><br><br>
                             <button class="btn btn-light border border-dark " style="width: 120px" ;
@@ -72,10 +73,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-6 withdraw my-5  ">
-                    <div class="card" style="width: 450px;">
+                <div class="col-sm-6 col-12  my-1  withdraw   ">
+                    <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title mb-3">Withdraw Amount $ <span id="withdrawl-amount">00</span></h5>
+                            <h5 class="card-title mb-3">Withdraw   $ <span id="withdrawl-amount">00</span></h5>
                             <input type="number" placeholder="Enter your withdraw amount" class="input-amount"
                                 id="withdraw-input"><br><br>
                             <button class="btn btn-light border border-dark " style="width: 120px" ;
@@ -86,7 +87,7 @@
             </div>
         </div>
         <div>
-            <h6 class="userName">Thank you for joining us, <span id="u_name"></span> !!</h6>
+            <h4 class="userName py-3 px-5">Thank you for joining us, <span id="u_name"></span> !!!</h4>
         </div>
     </div>
 

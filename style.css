@@ -10,7 +10,7 @@ body {
 }
 
 .container {
-    height: 100vh;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -24,8 +24,9 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 40px;
-    padding: 50px 100px;
+    /* height: 70vh;
+    width: 40vw;
+    margin-bottom: 40px; */
 
 }
 
@@ -42,13 +43,18 @@ body {
     border-radius: 10px;
     padding: 10px;
 }
+#User-in:hover, #Pass-in:hover{
+    background-color: rgb(243, 240, 240);
+}
 
 .login-btn {
     padding: 10px 20px;
     margin-top: 15px;
     border-radius: 10px;
     background-color: white;
-
+}
+.login-btn:hover{
+    background-color: rgb(233, 227, 227);
 }
 
 .deposit,
@@ -60,30 +66,43 @@ body {
 }
 
 .input-amount {
-    padding: 5px;
+    padding: 5px; 
     border-radius: 5px;
     width: 65%;
 }
 
 .Dashboard {
     font-weight: bold;
-    margin-bottom: 50px;
-    margin-top: 20px;
+    /* margin-bottom: 50px; */
+    /* margin-top: 20px; */
     background-color: rgb(191, 64, 191);
     text-align: center;
     color: white;
-    padding: 15px;
+    /* padding: 15px; */
     border-radius: 10px;
-    margin-top: 30px;
+    /* margin-top: 30px; */
 }
 
 .userName {
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
     text-align: center;
-    font-size: 27px;
+    /* font-size: 27px; */
     background-color: rgb(191, 64, 191);
     color: white;
     border-radius: 10px;
-    padding: 10px;
-    width: 51vw;
+    /* padding: 10px; */
+    /* width: 51vw; */
+}
+
+/* media queries .... */
+@media (max-width: 450px) {
+    .login-box-heading{
+        font-size: 40px;
+    }
+    .Dashboard{
+        font-size: 25px;
+    }
+    .userName{
+        font-size: 20px;
+    }
 }
